@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VoltFix | Electrical Services</title>
+
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+
+    <div class="container">
+
+        <!-- Navbar -->
+        <div class="navbar">
+            <div class="logo">
+                <a href="index.html"><img src="images/logo.png" width="125px"></a>
+            </div>
+
+            <nav>
+                <ul id="MenuItems">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="booking.html">Book Service</a></li>
+                </ul>
+            </nav>
+
+            <a href="booking.html">
+                <img src="images/cart.png" width="30px" height="30px">
+            </a>
+
+            <img src="images/menu.png" class="menu-icon" onclick="menutoggle()">
+        </div>
+
+        <!-- Page Header -->
+        <div class="row" style="margin-top:30px;">
+            <div class="col-2">
+                <h1>Our Electrical Services</h1>
+                <p>Professional, safe, and affordable electrical solutions for homes, businesses, and industries.</p>
+            </div>
+
+            <div class="col-2">
+                <img src="images/hero-electrician.png">
+            </div>
+        </div>
+
+        <!-- Services List -->
+        <h2 class="title">What We Offer</h2>
+
+        <div class="row">
+
+            <div class="col-4">
+                <img src="images/service-wiring.jpg">
+                <h4>House Wiring</h4>
+                <p>Full residential wiring for new and existing buildings.</p>
+                <p><strong>KES 5,000+</strong></p>
+            </div>
+
+            <div class="col-4">
+                <img src="images/service-repair.jpg">
+                <h4>Electrical Repairs</h4>
+                <p>Fix tripping breakers, faulty sockets, and wiring issues.</p>
+                <p><strong>KES 2,000+</strong></p>
+            </div>
+
+            <div class="col-4">
+                <img src="images/service-install-light.jpg">
+                <h4>Lighting Installation</h4>
+                <p>Indoor, outdoor, and security lighting setups.</p>
+                <p><strong>KES 1,500+</strong></p>
+            </div>
+
+            <div class="col-4">
+                <img src="images/service-solar.jpg">
+                <h4>Solar Installation</h4>
+                <p>Complete solar power systems for homes and offices.</p>
+                <p><strong>KES 20,000+</strong></p>
+            </div>
+
+        </div>
+
+        <div class="row">
+
+            <div class="col-4">
+                <img src="images/service-inverter.jpg">
+                <h4>Inverter Systems</h4>
+                <p>Backup power installation and maintenance.</p>
+                <p><strong>KES 8,000+</strong></p>
+            </div>
+
+            <div class="col-4">
+                <img src="images/service-cctv.jpg">
+                <h4>CCTV Installation</h4>
+                <p>Security camera wiring and setup.</p>
+                <p><strong>KES 12,000+</strong></p>
+            </div>
+
+            <div class="col-4">
+                <img src="images/service-fault.jpg">
+                <h4>Fault Diagnosis</h4>
+                <p>Quick troubleshooting and electrical testing.</p>
+                <p><strong>KES 2,000+</strong></p>
+            </div>
+
+            <div class="col-4">
+                <img src="images/service-emergency.jpg">
+                <h4>Emergency Callout</h4>
+                <p>24/7 urgent electrical support services.</p>
+                <p><strong>KES 3,000+</strong></p>
+            </div>
+
+        </div>
+
+        <!-- Why Choose Us -->
+        <div class="offer">
+            <div class="small-container">
+                <div class="row">
+
+                    <div class="col-2">
+                        <img src="images/exclusive.png" class="offer-img">
+                    </div>
+
+                    <div class="col-2">
+                        <h1>Why Choose VoltFix?</h1>
+                        <small>
+                            Certified electricians, fast response time, transparent pricing,
+                            and guaranteed safety compliance for all electrical work.
+                        </small>
+                        <br><br>
+                        <a href="booking.html" class="btn">Book a Service &#8594;</a>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <!-- Footer -->
+        <div class="footer">
+            <div class="container">
+                <div class="row">
+
+                    <div class="footer-col-1">
+                        <h3>Emergency Support</h3>
+                        <p>24/7 electrical services available.</p>
+                    </div>
+
+                    <div class="footer-col-2">
+                        <img src="images/logo-white.png">
+                        <p>Safe, reliable electrical services you can trust.</p>
+                    </div>
+
+                    <div class="footer-col-3">
+                        <h3>Services</h3>
+                        <ul>
+                            <li>Wiring</li>
+                            <li>Repairs</li>
+                            <li>Solar</li>
+                            <li>Inspections</li>
+                        </ul>
+                    </div>
+
+                    <div class="footer-col-4">
+                        <h3>Follow Us</h3>
+                        <ul>
+                            <li>Facebook</li>
+                            <li>Instagram</li>
+                            <li>LinkedIn</li>
+                            <li>Twitter</li>
+                        </ul>
+                    </div>
+
+                </div>
+
+                <hr>
+                <p class="copyright">Copyright © VoltFix Electrical Services</p>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- JS -->
+    <script>
+        var MenuItems = document.getElementById("MenuItems");
+        MenuItems.style.maxHeight = "0px";
+
+        function menutoggle() {
+            if (MenuItems.style.maxHeight == "0px") {
+                MenuItems.style.maxHeight = "200px";
+            } else {
+                MenuItems.style.maxHeight = "0px";
+            }
+        }
+    </script>
+
+</body>
+
+</html>
